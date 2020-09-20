@@ -64,6 +64,7 @@
           <%- post.content %>
           <div class="toc-container"><%- post.toc %></div>
           <% if (post.nextPost && !post.hideInList) { %>
+          <hr/>
           <p class="next-post">下一篇：
             <a href="<%= post.nextPost.link %>">
               <span class="post-title">
