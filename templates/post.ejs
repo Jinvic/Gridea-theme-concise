@@ -7,6 +7,7 @@
     <meta property="og:locale" content="zh-CN"/>
     <meta property="og:type" content="website"/>
     <meta property="og:site_name" content="<%= themeConfig.siteName %>"/>
+    <!-- <script src="../assets/styles/scripts/tocScript.js"></script> -->
   </head>
   <body>
   	<!-- Navigation -->
@@ -61,6 +62,7 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <%- post.content %>
+          <div class="toc-container"><%- post.toc %></div>
           <% if (post.nextPost && !post.hideInList) { %>
           <p class="next-post">下一篇：
             <a href="<%= post.nextPost.link %>">
@@ -94,6 +96,7 @@
     </div>
   </article>
  <%- include('./includes/footer') %>
+ <script src="<%= themeConfig.domain %>/media/scripts/tocScript.js"></script>
   </body>
 </html>
 
