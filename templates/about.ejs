@@ -34,6 +34,9 @@
                 </article>
             </div>
             <%- include('./includes/footer') %>
+            <% if (site.customConfig.live2d){ %>
+                <%- include('./includes/live2d') %>
+            <% } %>
         </div>
     </div>
 </body>

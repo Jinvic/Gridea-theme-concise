@@ -201,6 +201,14 @@
       "type": "markdown",
       "value": " ",
       "note": "关于页面的内容（Markdown 格式）"
+    },
+    {
+      "name": "live2d",
+      "label": "是否开启看板娘",
+      "group": "布局",
+      "value": true,
+      "type": "switch",
+      "note": ""
     }
   ]
 }

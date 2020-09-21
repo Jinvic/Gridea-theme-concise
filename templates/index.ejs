@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <%- include('./includes/head', { siteTitle: themeConfig.siteName }) %>
-  </head>
-  <body>
-    <%- include('./includes/header') %>
-    <%- include('./includes/post-list') %>
-    <%- include('./includes/footer') %>
-  </body>
+
+<head>
+  <%- include('./includes/head', { siteTitle: themeConfig.siteName }) %>
+</head>
+
+<body>
+  <%- include('./includes/header') %>
+  <%- include('./includes/post-list') %>
+  <%- include('./includes/footer') %>
+  <% if (site.customConfig.live2d){ %>
+    <%- include('./includes/live2d') %>
+  <% } %>
+</body>
+
 </html>

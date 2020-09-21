@@ -97,6 +97,9 @@
     </div>
   </article>
  <%- include('./includes/footer') %>
+ <% if (site.customConfig.live2d){ %>
+    <%- include('./includes/live2d') %>
+ <% } %>
  <script src="<%= themeConfig.domain %>/media/scripts/tocScript.js"></script>
   </body>
 </html>
