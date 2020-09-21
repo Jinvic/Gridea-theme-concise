@@ -205,10 +205,27 @@
     {
       "name": "live2d",
       "label": "是否开启看板娘",
-      "group": "布局",
+      "group": "live2d看板娘",
       "value": true,
       "type": "switch",
       "note": ""
+    },
+    {
+      "name": "live2d-model",
+      "label": "看板娘模型",
+      "group": "live2d看板娘",
+      "type": "select",
+      "value": "tororo",
+      "options": [
+        {
+          "label": "白猫（tororo）",
+          "value": "tororo"
+        },
+        {
+          "label": "黑猫（hijiki）",
+          "value": "hijiki"
+        }
+      ]
     }
   ]
 }
