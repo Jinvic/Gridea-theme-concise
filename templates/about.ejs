@@ -1,0 +1,41 @@
+<html lang="zh">
+
+<head>
+    <%- include('./includes/head', { siteTitle: `关于 - ${themeConfig.siteName}` }) %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+</head>
+
+<body>
+
+    <div class="main gt-bg-theme-color-first">
+        <%- include('./includes/header') %>
+        <div class="post-container">
+            <div class="post-detail">
+                <article id="post-content-article">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-10 mx-auto">
+                                <%- site.customConfig.about %>
+                                <div class="comment" style="text-align: center;">
+                                    <% if (typeof commentSetting !== 'undefined' && commentSetting.showComment) { %>
+                                    <% if (commentSetting.commentPlatform === 'gitalk') { %>
+                                    <%- include('./includes/gitalk') %>
+                                    <% } %>
+                                    <% if (commentSetting.commentPlatform === 'disqus') { %>
+                                    <%- include('./includes/disqus') %>
+                                    <% } %>
+                                    <% } %>
+                                    <% if(typeof site.customConfig['valine']!=='undefined' && site.customConfig['valine']) { %>
+                                    <%- include('./includes/valine') %>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                </article>
+            </div>
+            <%- include('./includes/footer') %>
+        </div>
+    </div>
+</body>
+
+</html>

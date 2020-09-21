@@ -193,6 +193,14 @@
       "type": "input",
       "value": "Just Go Go",
       "note": "评论区占位提示符"
+    },
+    {
+      "name": "about",
+      "label": "关于描述",
+      "group": "关于",
+      "type": "markdown",
+      "value": " ",
+      "note": "关于页面的内容（Markdown 格式）"
     }
   ]
 }
