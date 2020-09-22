@@ -6,21 +6,18 @@
 </div>
 
 <script type="text/javascript">
-    var message_Path = '/live2d/'
-    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
-</script>
-
-<script type="text/javascript">
     if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
         //移动端
         console.log("------ 移动端");
     } else {
         console.log("------ PC端 " + navigator.userAgent);
+
         addScript("https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js", () => {
             // 加载完成后再loadlive2d
             loadlive2d("live2d", "<%= themeConfig.domain %>/media/live2d/assets/<%=site.customConfig['live2d-model']%>.model.json%>");
         });
 
+        var home_Path = "<%= themeConfig.domain %>/";
         addScript("<%= themeConfig.domain %>/media/live2d/js/message.js", () => { });
     }
 
