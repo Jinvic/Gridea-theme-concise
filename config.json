@@ -1,7 +1,7 @@
 {
-  "name": "clean",
+  "name": "clean（by NeedQuiet）",
   "version": "1.0.0",
-  "author": "kveln",
+  "author": "NeedQuiet",
   "customConfig": [
 	  {
       "name": "github",
