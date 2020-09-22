@@ -27,20 +27,90 @@
 	background: #5d656d !important;
 }
 
-.post-preview .post-title-container {
-	display: flex;
-	align-items: center;
-	
-	a {
-		color: #4A4A4A;
-	}
-
-	a:hover {
-		color: #0085a1
-	}
-}
-
 h3.post-subtitle {
 	margin-top: 0;
 	margin-bottom: 0;
+}
+
+/************ 首页cell **************/
+.row .post-row-container {
+	margin: 30px 0px;
+	border-radius: 10px;
+	padding: 20px 30px 30px 30px;
+	transition: all 0.3s;
+	background: #f3f3f3a8;
+}
+.row .post-row-container:hover {
+	transform: scale(1.012);
+}
+
+// 标题
+.row .post-row-container .title-floor {
+	.post-title-container {
+		display: flex;
+		align-items: center;
+
+		a {
+			color: #4a4a4a;
+			h2 {
+				margin: 10px 0px;
+			}
+		}
+
+		a:hover {
+			color: #0085a1;
+		}
+	}
+}
+//fist floor
+.row .post-row-container .post-row-first-floor {
+	flex-direction: row;
+	justify-content: space-between;
+	display: -webkit-flex;
+	align-items: stretch;
+
+	// 图片
+	.post-feature-image {
+		width: 200px;
+		height: 100px;
+		flex-basis: 200px;
+		flex-shrink: 0;
+		margin-left: 20px;
+		border-radius: 10px;
+		overflow: hidden;
+		background-size: cover;
+		background-position: center;
+	}
+
+	// 文章信息
+	.post-preview {
+		height: inherit;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.post-meta {
+			margin-bottom: 0;
+		}
+	}
+}
+
+// sec floor
+.row .post-row-container .post-row-sec-floor {
+	.post-tag {
+		padding: 2px 8px;
+		border-radius: 14px;
+		color: #4a4a4a;
+		font-size: 12px;
+		font-weight: 800;
+		border-width: 1px;
+		border-color: #4a4a4a;
+		border-style: solid;
+		margin-right: 10px;
+		text-decoration: none;
+	}
+
+	.post-tag:hover{
+		color: #0085a1;
+		border-color: #0085a1;
+	}
 }
