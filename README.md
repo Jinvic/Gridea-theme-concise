@@ -6,8 +6,9 @@
     2. 主题-自定义配置-增加'关于页面'
     3. 文章内增加目录索引
     4. 主题-自定义配置添加live2d看板娘
-        
-## live2d
+ 
+## 说明
+### live2d
 参考了：[gridea-theme-fog](https://github.com/850552586/gridea-theme-fog)
 - 模型下载地址: [下载地址](https://gitee.com/ericam/live2d-widget-models)
 - 模型样式预览: [预览地址](https://blog.csdn.net/wang_123_zy/article/details/87181892)
