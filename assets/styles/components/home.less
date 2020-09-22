@@ -53,6 +53,9 @@ h3.post-subtitle {
 
 		a {
 			color: #4a4a4a;
+			text-decoration: none;
+			position: relative;
+			margin-bottom: 3px;
 			h2 {
 				margin: 10px 0px;
 			}
@@ -60,6 +63,21 @@ h3.post-subtitle {
 
 		a:hover {
 			color: #0085a1;
+		}
+
+		a:hover:after {
+			width: 100%;
+		}
+
+		a:after{
+			content: "";
+			width: 0;
+			height: 2px;
+			background: #0085a1;
+			position: absolute;
+			left: 0;
+			bottom: 0px;
+			transition: width 0.35s cubic-bezier(0.5, 0, 0.5, 1);
 		}
 	}
 }
