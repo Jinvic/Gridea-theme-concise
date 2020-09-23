@@ -1,5 +1,5 @@
-# Gridea-theme-clean
-是一款免费的Gridea主题，在[Alanrk的Gridea-theme-clean](https://github.com/Alanrk/Gridea-theme-clean) 
+# Gridea-theme-clean-Custom
+是一款免费的Gridea主题，感谢作者**Alanrk**制作的[Gridea-theme-clean](https://github.com/Alanrk/Gridea-theme-clean) 
 
 >本Theme在Clean的基础上进行魔改，虽偏离了其主题本意，但使用上方便不少；
 
