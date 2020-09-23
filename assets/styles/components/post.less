@@ -1,5 +1,5 @@
 #post-content-article .container .row {
-    div:first-child{
+    .post-content-container{
         display: flex;
         flex-direction: column;
         hr {
@@ -17,4 +17,11 @@
     margin-bottom: 24px;
     border-radius: 15px;
     box-shadow: 0 3px 15px 2px rgb(80 77 77);
+}
+
+/*手机竖屏*/
+@media all and (orientation: portrait) {
+    #post-content-article{
+        padding: 20px 10px;
+    }
 }

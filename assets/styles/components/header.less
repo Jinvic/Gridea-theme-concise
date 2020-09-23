@@ -115,3 +115,44 @@ header.masthead .row {
 		font-size: 30px;
 	}
 }
+
+
+/*手机竖屏*/
+@media all and (orientation: portrait) {
+	// header
+	header.masthead{
+		margin-bottom: 5px !important;
+	}
+	header.masthead .row {
+		margin-top: 57px;
+		height: 230px !important;
+
+		// 常规 header info
+		.site-heading {
+			// 头像
+			.user-avatar {
+				width: 75px;
+			}
+			// 作者
+			h1 {
+				font-size: 35px !important;
+			}
+			// 描述
+			span {
+				font-size: 15px;
+				margin: 15px 0 0;
+			}
+		}
+		// post header info
+		.post-heading {
+			// 文章名
+			h1 {
+				font-size: 23px !important;
+			}
+			// 文章信息
+			span {
+				font-size: 12px !important;
+			}
+		}
+	}
+}

@@ -71,13 +71,14 @@ h3.post-subtitle {
 
 		a:hover:after {
 			width: 100%;
+			background: #0085a1;
 		}
 
-		a:after{
+		a:after {
 			content: "";
 			width: 0;
 			height: 2px;
-			background: #0085a1;
+			background: #4a4a4a;
 			position: absolute;
 			left: 0;
 			bottom: 4px;
@@ -133,8 +134,38 @@ h3.post-subtitle {
 		text-decoration: none;
 	}
 
-	.post-tag:hover{
+	.post-tag:hover {
 		color: #0085a1;
 		border-color: #0085a1;
+	}
+}
+
+/*横屏 | 浏览器*/
+@media all and (orientation: landscape) {
+	header.masthead .row {
+		margin-top: 0px;
+	}
+}
+
+/*手机竖屏*/
+@media all and (orientation: portrait) {
+	.row .post-row-container {
+		margin: 25px 20px;
+		padding: 4px 23px 14px 23px;
+		
+		.post-row-first-floor {
+			// 封面图
+			.post-feature-image {
+				display: none;
+			}
+		}
+
+		.post-row-sec-floor {
+			// 下划线
+			hr {
+				margin-top: 0.5rem;
+				margin-bottom: 0.5rem;
+			}
+		}
 	}
 }
