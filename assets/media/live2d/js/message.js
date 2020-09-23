@@ -110,7 +110,12 @@ initTips();
 				text = "嗨~ 快来逗我玩吧！";
 			}
 		} else {
-			text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(" - ")[0] + " 」</span>";
+			var documentTitle = document.title.split(" - ")[0];
+			if (documentTitle === "搜索") {
+				text = '搜索方式为<span style="color:#0099cc;">「 模糊搜索 」</span>哟';
+			} else {
+				text = '欢迎阅读<span style="color:#0099cc;">「 ' + documentTitle + " 」</span>";
+			}
 		}
 	}
 	showMessage(text, 12000);

@@ -1,5 +1,7 @@
 # Gridea-theme-clean
-是一款免费的Gridea主题，在[Alanrk的Gridea-theme-clean](https://github.com/Alanrk/Gridea-theme-clean) 基础上略微修改
+是一款免费的Gridea主题，在[Alanrk的Gridea-theme-clean](https://github.com/Alanrk/Gridea-theme-clean) 
+
+>本Theme在Clean的基础上进行魔改，虽偏离了其主题本意，但使用上方便不少；
 
 ## 修改内容
     1. 主题-自定义配置-增加Valine评论配置
@@ -7,6 +9,7 @@
     3. 主题-自定义配置-增加live2d看板娘配置
     4. 文章内增加目录索引
     5. 增加封面图显示
+    6. 添加模糊搜索
  
 ## 说明
 ### 1. live2d
