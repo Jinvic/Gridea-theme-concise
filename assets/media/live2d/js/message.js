@@ -24,7 +24,7 @@ String.prototype.renderTip = function (context) {
 	var element = new Image();
 	Object.defineProperty(element, "id", {
 		get: function () {
-			showMessage("哈哈，你打开控制台是想要看看我的秘密吗？我在盯着你哟~~", 5000);
+			showMessage("咦？你打开控制台是想看本喵的秘密吗？", 5000);
 		},
 	});
 	console.log(element);
