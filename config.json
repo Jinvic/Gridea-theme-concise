@@ -226,6 +226,23 @@
           "value": "hijiki"
         }
       ]
+    },
+    {
+      "name": "skin",
+      "label": "皮肤",
+      "group": "皮肤",
+      "value": "white",
+      "type": "select",
+      "options": [
+        {
+          "label": "简约白",
+          "value": "white"
+        },
+        {
+          "label": "暗夜黑",
+          "value": "black"
+        }
+      ]
     }
   ]
 }

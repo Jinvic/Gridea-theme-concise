@@ -18,13 +18,11 @@
 }
 
 .sticky-top-flag {
-	color: white;
 	padding: 3px 10px;
 	font-size: 12px;
 	border-radius: 5px;
 	margin-right: 10px;
 	vertical-align: middle;
-	background: #5d656d !important;
 }
 
 h3.post-subtitle {
@@ -35,14 +33,51 @@ h3.post-subtitle {
 	}
 }
 
+.post-preview > a {
+	color: #4a4a4a;
+}
+.post-preview > a:focus,
+.post-preview > a:hover {
+	text-decoration: none;
+	color: #0085a1;
+}
+.post-preview > a > .post-title {
+	font-size: 28px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+.post-preview > a > .post-subtitle {
+	font-weight: 300;
+	margin: 0 0 10px;
+}
+.post-preview > .post-meta {
+	font-size: 16px;
+	font-style: italic;
+	margin-top: 4px;
+	color: #868e96;
+	font-family: Lora, "Times New Roman", serif;
+}
+.post-preview > .post-meta > a {
+	text-decoration: none;
+}
+.post-preview > .post-meta > a:focus,
+.post-preview > .post-meta > a:hover {
+	text-decoration: underline;
+	color: #0085a1;
+}
+@media only screen and (min-width: 768px) {
+	.post-preview > a > .post-title {
+		font-size: 28px;
+	}
+}
+
 /************ 首页cell **************/
 .row .post-row-container {
 	margin: 30px 30px;
 	border-radius: 10px;
 	padding: 10px 30px 20px 30px;
 	transition: all 0.3s;
-	background: #f3f3f3a8;
-	box-shadow: 0 3px 15px 2px rgb(193 188 188);
+	// box-shadow: 0 3px 15px 2px rgb(193 188 188);
 }
 .row .post-row-container:hover {
 	transform: scale(1.012);
@@ -55,7 +90,6 @@ h3.post-subtitle {
 		align-items: center;
 
 		a {
-			color: #4a4a4a;
 			text-decoration: none;
 			position: relative;
 			margin-bottom: 3px;
@@ -66,19 +100,19 @@ h3.post-subtitle {
 		}
 
 		a:hover {
-			color: #0085a1;
+			// color: #0085a1;
 		}
 
 		a:hover:after {
 			width: 100%;
-			background: #0085a1;
+			// background: #0085a1;
 		}
 
 		a:after {
 			content: "";
 			width: 0;
 			height: 2px;
-			background: #4a4a4a;
+			// background: #4a4a4a;
 			position: absolute;
 			left: 0;
 			bottom: 4px;
@@ -124,19 +158,12 @@ h3.post-subtitle {
 	.post-tag {
 		padding: 1px 6px;
 		border-radius: 14px;
-		color: #4a4a4a;
 		font-size: 10px;
 		font-weight: 800;
 		border-width: 1px;
-		border-color: #4a4a4a;
 		border-style: dashed;
 		margin-right: 10px;
 		text-decoration: none;
-	}
-
-	.post-tag:hover {
-		color: #0085a1;
-		border-color: #0085a1;
 	}
 }
 
