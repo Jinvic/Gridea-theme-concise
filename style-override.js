@@ -63,8 +63,20 @@ const generateOverride = (params = {}) => {
 			}
 
 			#mainNav.is-fixed {
-				background-color: ${colors["theme-color-first"][params.skin].colorRgba(0.9)} !important;
+				background-color: ${colors["theme-color-first"][params.skin].colorRgba(0.9)};
 				border-bottom: 1px solid ${colors["content-color-flip"][params.skin]};
+			}
+
+			.fixed-top {
+				background-color: ${colors["theme-color-first"][params.skin]};
+			}
+			.fixed-top .navbar-brand,
+			.fixed-top .navbar-nav > li.nav-item > a,
+			.fixed-top .navbar-toggler {
+				color: ${colors["content-color-first"][params.skin]};
+			}
+			.navbar-light .navbar-toggler {
+				border-color: ${colors["content-color-first"][params.skin].colorRgba(0.5)} !important;;
 			}
 
 			a {
@@ -89,7 +101,7 @@ const generateOverride = (params = {}) => {
 				color: ${colors["content-color-first"][params.skin]} !important;
 			}
 			.title-floor .post-title-container a:after,
-			.pagination-active a {
+			.pagination-active a{
 				background-color: ${colors["content-color-first"][params.skin]} !important;
 			}
 
