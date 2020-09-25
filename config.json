@@ -229,8 +229,8 @@
     },
     {
       "name": "skin",
-      "label": "皮肤",
-      "group": "皮肤",
+      "label": "主题",
+      "group": "个性化",
       "value": "white",
       "type": "select",
       "options": [
@@ -243,6 +243,103 @@
           "value": "black"
         }
       ]
+    },
+    {
+      "name": "isEnabledCustomColor",
+      "label": "开启个性化",
+      "group": "个性化",
+      "type": "switch",
+      "value": false,
+      "note": "开启后默认皮肤将失效"
+    },
+    {
+      "name": "ctf",
+      "label": "主背景色",
+      "group": "个性化",
+      "value": "#ffffff",
+      "type": "input",
+      "card": "color",
+      "note": "页面背景色等"
+    },
+    {
+      "name": "cts",
+      "label": "次背景色",
+      "group": "个性化",
+      "value": "#f3f3f3a8",
+      "type": "input",
+      "card": "color",
+      "note": "首页文章列表背景色"
+    },
+    {
+      "name": "ccf",
+      "label": "主文字颜色",
+      "group": "个性化",
+      "value": "#4a4a4a",
+      "type": "input",
+      "card": "color",
+      "note": "文章内容文字颜色等"
+    },
+    {
+      "name": "ccs",
+      "label": "次要文字颜色",
+      "group": "个性化",
+      "value": "#868e96",
+      "type": "input",
+      "card": "color",
+      "note": "首页文章信息字体颜色等"
+    },
+    {
+      "name": "highlight",
+      "label": "主强调色",
+      "group": "个性化",
+      "value": "#0085a1",
+      "type": "input",
+      "card": "color",
+      "note": "文字高亮色"
+    },
+    {
+      "name": "flip",
+      "label": "页码主颜色",
+      "group": "个性化",
+      "value": "#ffffff",
+      "type": "input",
+      "card": "color",
+      "note": "文字翻转色(页码)"
+    },
+    {
+      "name": "cofs",
+      "label": "页码hover",
+      "group": "个性化",
+      "value": "#817c7c",
+      "type": "input",
+      "card": "color",
+      "note": "文字次要翻转色(页码hover)"
+    },
+    {
+      "name": "lc",
+      "label": "分割线的颜色",
+      "group": "个性化",
+      "value": "#0000001a",
+      "type": "input",
+      "card": "color",
+      "note": "分割线的颜色"
+    },
+    {
+      "name": "bsc",
+      "label": "阴影",
+      "group": "个性化",
+      "value": "#c1bcbc",
+      "type": "input",
+      "card": "color",
+      "note": "阴影"
+    },
+    {
+      "name": "ho",
+      "label": "header 遮罩层",
+      "group": "个性化",
+      "value": 0.4,
+      "type": "input",
+      "note": "header 遮罩层"
     }
   ]
 }

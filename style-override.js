@@ -53,6 +53,20 @@ const generateOverride = (params = {}) => {
 		},
 	};
 
+	if (params.isEnabledCustomColor) {
+		params.skin = "custom";
+		colors["theme-color-first"][params.skin] = params.ctf;
+		colors["theme-color-second"][params.skin] = params.cts;
+		colors["content-color-first"][params.skin] = params.ccf;
+		colors["content-color-second"][params.skin] = params.ccs;
+		colors["content-color-highlight"][params.skin] = params.highlight;
+		colors["content-color-flip"][params.skin] = params.flip;
+		colors["content-color-flip-second"][params.skin] = params.cofs;
+		colors["line-color"][params.skin] = params.lc;
+		colors["box-shadow-color"][params.skin] = params.bsc;
+		colors["header-opacity"][params.skin] = params.ho;
+	}
+
 	if (!params.skin) {
 		params.skin = "white";
 	}
