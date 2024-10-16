@@ -1,0 +1,32 @@
+<!-- <script src='https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js'></script> -->
+<script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet' />
+
+<!-- <style>
+	div#vcomments{
+		width:<%=site.customConfig['vPercentWidth']%>%;
+		max-width: <%=site.customConfig['vMaxWidth']%>px;
+		padding: <%=site.customConfig['vPadding']%>
+	}
+</style> -->
+
+<!-- <% if(site.customConfig['valine']) { %>
+	<div id="vcomments"></div>
+<% } %> -->
+<% if(site.customConfig['waline']) { %>
+	<div id="wcomments"></div>
+<% } %>
+<script>
+	// new Valine({
+	Waline.init({
+		el: '#wcomments',
+		serverURL: '<%=site.customConfig['serverURL']%>',
+		login: '<%=site.customConfig['login']%>',
+		wordLimit: <%=site.customConfig['wordLimit']%>,
+		pageSize: <%=site.customConfig['pageSize']%>,
+		reaction: <%=site.customConfig['reaction']%>,
+		<% if(site.customConfig['imageUploader'] == false) { %>
+		imageUploader: false,
+		<% } %>
+	});
+</script>

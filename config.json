@@ -60,6 +60,112 @@
       "note": "链接地址"
     },
     {
+      "name": "waline",
+      "label": "是否开启waline评论系统",
+      "group": "waline评论系统",
+      "type": "switch",
+      "value": false,
+      "note": "启用waline评论系统，需先关闭Gridea自带的评论系统开关。"
+    },
+    {
+      "name": "serverURL",
+      "label": "服务端地址",
+      "group": "waline评论系统",
+      "type": "input",
+      "value": "",
+      "note": "部署在Vercel的服务端地址。"
+    },
+    {
+      "name": "commentSorting",
+      "label": "评论排序",
+      "group": "waline评论系统",
+      "value": "latest",
+      "type": "select",
+      "options": [
+        {
+          "label": "最近排序",
+          "value": "latest"
+        },
+        {
+          "label": "最早排序",
+          "value": "oldest"
+        },
+        {
+          "label": "最热排序",
+          "value": "hottest"
+        }
+      ],
+      "note": "评论列表排序方式。"
+    },
+    {
+      "name": "login",
+      "label": "是否启用登录",
+      "group": "waline评论系统",
+      "value": "enable",
+      "type": "select",
+      "options": [
+        {
+          "label": "启用登录 (默认)",
+          "value": "enable"
+        },
+        {
+          "label": "禁用登录，用户只能填写信息评论",
+          "value": "disable"
+        },
+        {
+          "label": "强制登录，用户必须注册并登录才可发布评论",
+          "value": "force"
+        }
+      ],
+      "note": "登录模式状态。"
+    },
+    {
+      "name": "wordLimit",
+      "label": "评论字数限制",
+      "group": "waline评论系统",
+      "type": "input",
+      "value": 300,
+      "note": "填入单个数字时为最大字数限制。设置为 0 时无限制。"
+    },
+    {
+      "name": "pageSize",
+      "label": "页面大小",
+      "group": "waline评论系统",
+      "type": "select",
+      "value": 10,
+      "options": [
+        {
+          "label": 3,
+          "value": 3
+        },
+        {
+          "label": 5,
+          "value": 5
+        },
+        {
+          "label": 10,
+          "value": 10
+        }
+      ],
+      "note": "评论列表分页，每页条数。"
+    },
+    {
+      "name": "imageUploader",
+      "label": "图片上传功能",
+      "group": "waline评论系统",
+      "type": "switch",
+      "value": true,
+      "note": "可以禁用图片上传。"
+    },
+    {
+      "name": "reaction",
+      "label": "表情互动功能",
+      "group": "waline评论系统",
+      "type": "switch",
+      "value": false,
+      "note": "开启将提供默认表情。"
+    },
+    {
       "name": "valine",
       "label": "是否开启valine评论系统",
       "group": "valine评论系统",
@@ -224,6 +330,10 @@
         {
           "label": "黑猫（hijiki）",
           "value": "hijiki"
+        },
+        {
+          "label": "小春（koharu）",
+          "value": "koharu"
         }
       ]
     },
